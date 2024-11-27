@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  height: 100dvh;
+  min-height: 500px;
+
+  .hero {
+    max-width: 200px;
+  }
+
+  span {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+    a {
+      margin: 0;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  span img {
+    width: 30px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    background: none; /* Remove background color */
+    filter: none; /* Ensure no additional styling affects the icon */
+  }
+  
+  span a {
+    display: inline-block; /* Ensure proper spacing and alignment */
+  }
+  
+  span a:hover img {
+    filter: brightness(1.2); /* Brighten on hover for better interactivity */
+  }
+  
+
+
+  a {
+    width: fit-content;
+    align-self: center;
+  }
+
+  button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.colorModeContainer {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center them horizontally */
+  position: relative; /* For consistent placement */
+  gap: 20px; /* Add spacing between the sun icon and image */
+}
+
+.colorMode {
+  width: 25px; /* Set size for theme icon */
+  height: auto; /* Maintain aspect ratio */
+  background: none; /* Remove background */
+  filter: none; /* Ensure no color filters are applied */
+  cursor: pointer;
+}
+
+.colorMode:hover {
+  filter: brightness(1.2); /* Brighten the icon slightly on hover */
+}
+
+.hero {
+  max-width: 200px;
+  border-radius: 50%; /* Optional: Make the profile image circular */
+}
+
+.colorMode:hover {
+  cursor: pointer;
+}
+
+.description {
+  max-width: 24ch;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 10px; /* Add padding for spacing */
+  word-wrap: break-word; /* Allow long words to break */
+  overflow-wrap: anywhere; /* Ensure long words break properly */
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.4; /* Increase line height for readability */
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 390px) {
+  .info {
+    gap: 15px; /* Reduce spacing for smaller screens */
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px; /* Reduce font size for mobile */
+  }
+
+  h2 {
+    font-size: 16px; /* Reduce font size */
+    line-height: 1.6; /* Increase line spacing for clarity */
+  }
+
+  p {
+    font-size: 14px; /* Smaller font for mobile */
+    line-height: 1.6;
+  }
+}
+
+@media (width >= 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .hero {
+      max-width: 350px;
+      width: 350px;
+    }
+  }
+}
+
+@media (width >= 1400px) {
+  .container {
+    .hero {
+      max-width: 400px;
+      width: 400px;
+    }
+  }
+}

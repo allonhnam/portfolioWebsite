@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers title and other content horizontally */
+  text-align: center;
+  gap: 20px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto; /* Centers the title */
+  text-align: center;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+img {
+  max-width: 300px; /* Default size for smaller screens */
+  width: 100%;
+  height: auto;
+  align-self: center;
+  background-color: var(--project-card-bg); /* Keeps the background color */
+}
+
+@media (min-width: 800px) {
+  .projectsContainer {
+    flex-direction: row; /* Switch to row layout on larger screens */
+    flex-wrap: wrap; /* Allow wrapping of content */
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+
+  img {
+    max-width: 400px; /* Increase image size for larger screens */
+    width: 100%; /* Maintain responsiveness */
+    height: auto; /* Keep aspect ratio */
+  }
+}
+
+@media (min-width: 1200px) {
+  img {
+    max-width: 500px; /* Further increase size for very large screens */
+    width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (min-width: 1600px) {
+  img {
+    max-width: 600px; /* Maximum size for ultra-large screens */
+    width: 100%; /* Maintain responsiveness */
+    height: auto; /* Keep aspect ratio */
+  }
+}
