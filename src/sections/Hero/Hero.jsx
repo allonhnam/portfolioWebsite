@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/AllonNam_ProfilePicture.png";
+import heroImg from "../../assets/AllonNam_ProfilePicture4.jpeg";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
