@@ -6,6 +6,20 @@
   gap: 20px;
 }
 
+a {
+  text-decoration: none; /* Removes underline for links */
+}
+
+.container a {
+  text-decoration: none; /* Removes underline for links in the container */
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+
+
 .sectionTitle {
   font-size: 36px;
   font-weight: bold;

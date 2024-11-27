@@ -20,6 +20,18 @@
   gap: 30px;
 }
 
+a {
+  text-decoration: none; /* Removes underline for links */
+}
+
+.container a {
+  text-decoration: none; /* Removes underline for links in the container */
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
 img {
   max-width: 300px; /* Default size for smaller screens */
   width: 100%;
