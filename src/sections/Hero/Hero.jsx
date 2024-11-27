@@ -34,11 +34,15 @@ const Hero = () => {
       </div>
       <div className={styles.info}>
         <h1>
-          Allon
+          Allon (Hyun Jun)
           <br />
           Nam
         </h1>
-        <h2>Software Engineer | Product Manager</h2>
+        <h2>
+          Software Engineer
+          <br />
+          Product Manager
+        </h2>
         <span>
           <a
             href="https://www.linkedin.com/in/allonnam/"
