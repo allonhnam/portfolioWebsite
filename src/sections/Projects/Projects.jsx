@@ -21,7 +21,7 @@ const Projects = () => {
           <p>Communication App</p>
         </a>
         <a href="https://allonnam96.github.io/wordle/">
-          <img className="hover" src={pathfollow} alt="" />
+          <img className="hover" src={wordle} alt="" />
           <h3>WORDLE CLONE (Vanilla JavaScript)</h3>
           <p>Guessing 5-letter word game</p>
         </a>
