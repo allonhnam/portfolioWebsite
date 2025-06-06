@@ -2,7 +2,7 @@ import styles from "./WorkProjectsStyles.module.css";
 import ubliss from "../../assets/ubliss.png";
 import headstarter from "../../assets/HeadStarterAI.png";
 import flexport from "../../assets/flexport.png";
-import saleo from "../../assets/saleo.png"
+import saleo from "../../assets/Saleo.png"
 
 const WorkProjects = () => {
   return (
