@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <div className={styles.info}>
         <h1>
-          Allon (Hyun Jun)
+          Allon
           <br />
           Nam
         </h1>
@@ -68,9 +68,9 @@ const Hero = () => {
 
         <h3>New York, NY</h3>
         <p>
-          Transforming data into insights
+          Transforming data into AI
           <br />
-          and insights into innovative products.
+          and AI into innovative products.
         </p>
         <a href={cv} download>
           <button className="hover">Resume</button>
