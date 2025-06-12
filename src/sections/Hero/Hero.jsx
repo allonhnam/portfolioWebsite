@@ -41,7 +41,7 @@ const Hero = () => {
         <h2>
           Software Engineer
           <br />
-          Product Manager
+          AI/ML Product
         </h2>
         <span>
           <a
@@ -55,7 +55,7 @@ const Hero = () => {
             />
           </a>
           <a
-            href="https://github.com/allonnam96"
+            href="https://github.com/allonhnam"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -68,9 +68,9 @@ const Hero = () => {
 
         <h3>New York, NY</h3>
         <p>
-          Transforming data into AI
+        Turning AI into real-world products that
           <br />
-          and AI into innovative products.
+          engage, scale, and deliver impact.
         </p>
         <a href={cv} download>
           <button className="hover">Resume</button>
