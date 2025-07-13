@@ -4,17 +4,23 @@ import pathfollow from "../../assets/pathfollow.png";
 import expression from "../../assets/expression.png";
 import discord from "../../assets/discord.jpg";
 import wordle from "../../assets/WordleSuccess.png";
-import aiInterviewer from "../../assets/AI-Interviewer.png"
+import aiInterviewer from "../../assets/AI-Interviewer.png";
+import genAIStudio from "../../assets/GenAI.png"
 
 const Projects = () => {
   return (
     <section id="projects" className={styles.container}>
       <h1 className={styles.sectionTitle}>Academic Projects</h1>
       <div className={styles.projectsContainer}>
-      <a href="https://ai-interviewer-one-eta.vercel.app/">
+        <a href="https://ai-interviewer-one-eta.vercel.app/">
           <img className="hover" src={aiInterviewer} alt="" />
           <h3>AI INTERVIEWER (Voice AI)</h3>
           <p>Practice Your Mock Interviews</p>
+        </a>
+        <a href="https://allongenai.streamlit.app/">
+          <img className="hover" src={genAIStudio} alt="" />
+          <h3>Gen AI Studio</h3>
+          <p>Generate Images With a Prompt</p>
         </a>
         <a href="https://home-keeper.com/">
           <img className="hover" src={homekeeper} alt="" />
